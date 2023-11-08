@@ -1,0 +1,96 @@
+.CustomersCard {
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    max-height: 700px;
+    min-width: 400px;
+    max-width: 450px;
+    gap: 30px; 
+    scale: 0.8;
+}
+
+.version__time span {
+    display: inline-block;
+    font-size: 26px;
+}
+
+.info__and__fullname {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;    
+}
+
+.infoBtn {
+    background-color: blue;
+    min-width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+.infoFullname {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.infoFullname img {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.fullname {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.customerDescription {
+    color: rgb(204,204,204);
+    font-size: 18px;
+}
+
+.downloadBtn {
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 100vmax;
+    color: rgb(123,159,254);
+    border-color: rgb(123,159,254);
+    font-size: 16px;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {    
+    .CustomersCard {
+        margin: 0 auto;
+        scale: 0.9;
+    }
+
+}
+
+@media screen and (max-width: 768px) {    
+    .CustomersCard {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        scale: 1;
+    }
+    
+    .info__and__fullname {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+}
+

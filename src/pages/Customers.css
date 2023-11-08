@@ -1,0 +1,36 @@
+.Customers {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .Customers {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 0 auto;
+    }    
+
+    .test {
+        gap: 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Customers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+}

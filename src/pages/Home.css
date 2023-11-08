@@ -1,0 +1,16 @@
+.Home {
+    margin: 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.Home > * {
+    padding: 15px;
+}
+
+@media screen and (max-width: 576px) {
+    .Home > * {
+        padding: 10px;
+    }
+}

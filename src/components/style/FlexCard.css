@@ -1,0 +1,56 @@
+.FlexCard {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    flex: 0 0 calc(100% / 3);
+    scale: 0.9;
+}
+
+.FlexCard:hover {
+    background-color: rgba(167, 167, 167, 0.1);
+    cursor: pointer;
+}
+
+.left__flexCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 100vmax;
+    overflow: hidden;
+}
+
+.left__flexCard svg {
+    width: 40px;
+    height: 40px;
+    color: rgb(33,115,239);
+}
+
+.right__flexCard {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    gap: 10px;  
+      
+}
+
+.right__flexCard h4 {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .FlexCard {
+        flex: 0 0 calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .FlexCard {
+        flex: 0 0 calc(100% / 1);
+    }
+}
