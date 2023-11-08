@@ -32,22 +32,9 @@ const customers = [
   },
 ]
 
-const repeatCount = 3;
-
 const Customers = () => {
   return (
     <div className='Customers'>
-
-{/* {customers.map((customer) => (
-          <CustomersCard 
-            key={Math.floor(Math.random() * 99)}
-            dateTime={customer.dateTime}
-            status={customer.status}
-            color={customer.color}
-            name={customer.name}
-            description={customer.description}
-          />
-        ))} */}
 
     {Array.from({ length: 3 }).map(() => (
         <div className='test' key={Math.floor(Math.random() * 99)}>
